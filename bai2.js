@@ -13,6 +13,7 @@ $(document).ready(function(){
     console.log(arr);
     function show(){
         $('p').remove();
+        $('br').remove();
         for(let i = 0; i< arr.length;i++){
             $('body').append('<p>'+arr[i].name+': '+arr[i].diem+'</p><br>')
         }
